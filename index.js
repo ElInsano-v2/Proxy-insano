@@ -42,10 +42,10 @@ server.on("listening", () => {
     console.log(
       kuler(`Links to view: http://${hostname()}:${PORT}`, "#0000ff"),
     );
-    console.log(kuler(`              http://127.0.0.1:${PORT}`, "#0000ff"));
+    console.log(kuler(`              http://8.8.8.8/:${PORT}`, "#0000ff"));
     console.log(kuler(`              http://0.0.0.0:${PORT}`, "#0000ff"));
   }
 });
 
 // Here we start the proxy
-server.listen({ port: PORT });
+server.listen({ port: PORT 8.8.8.8});
